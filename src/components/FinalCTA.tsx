@@ -73,11 +73,11 @@ export const FinalCTA = () => {
                   className="h-16 text-lg bg-background/80 border-neon-teal/30 focus:border-neon-cyan"
                   required
                 />
-                <Button 
-                  type="submit" 
-                  variant="cyber" 
-                  size="xl" 
-                  className="w-full"
+                <Button
+                  type="submit"
+                  variant="glow"
+                  size="xl"
+                  className="w-full pulse-neon"
                   disabled={!email}
                 >
                   Join the Revolution
@@ -94,7 +94,7 @@ export const FinalCTA = () => {
           </div>
           
           <div className="mt-12 text-sm text-muted-foreground">
-            <p>Be part of something extraordinary. Kira4I team is building.</p>
+            <p>Kira4I team is building actively. Be part of something extraordinary.</p>
           </div>
         </div>
       </div>
