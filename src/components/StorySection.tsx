@@ -4,6 +4,7 @@ interface StorySectionProps {
   title: string;
   subtitle: string;
   content: string;
+  image: string;
   highlightText?: string;
   reverse?: boolean;
 }
@@ -12,6 +13,7 @@ export const StorySection = ({
   title,
   subtitle,
   content,
+  image,
   highlightText,
   reverse = false
 }: StorySectionProps) => {
@@ -34,10 +36,12 @@ export const StorySection = ({
           </div>
           
           <div className={`${reverse ? 'lg:col-start-1' : ''} relative`}>
-            
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-6xl text-neon-cyan opacity-50">◇</div>
-            </div>
+            <div className="absolute inset-0 bg-gradient-cyber opacity-20 rounded-2xl blur-xl" />
+            <img
+              src={image}
+              alt={title}
+              className="relative z-10 w-full max-w-lg mx-auto rounded-2xl neon-glow"
+            />
           </div>
         </div>
       </div>
