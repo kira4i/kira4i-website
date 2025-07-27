@@ -38,11 +38,13 @@ All colors MUST be HSL.
     --ring: 176 100% 70%;
 
     /* Updated Neon Colors */
-    --neon-cyan: 176 100% 70%;
-    --neon-teal: 184 65% 55%;
-    --neon-dark-teal: 184 45% 35%;
-    --neon-blue: 220 60% 60%;
+    --neon-cyan: 210 100% 65%;
+    --neon-teal: 275 80% 72%;
+    --neon-dark-teal: 275 60% 45%;
+    --neon-blue: 240 80% 60%;
     --neon-green: 150 80% 60%;
+    --neon-magenta: 310 80% 70%;
+    --neon-purple: 270 70% 65%;
     
     /* Gradients */
     --gradient-cyber: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-teal)));
