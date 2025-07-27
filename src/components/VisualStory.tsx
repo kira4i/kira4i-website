@@ -8,7 +8,7 @@ export const VisualStory = () => {
       subtitle: "From Stone to Steel",
       content: "Small bands shaped hammers and knives. Simple tools ignited our rise.",
       highlightText: "Every revolution starts with a single strike.",
-      image: "https://images.unsplash.com/photo-1502877828070-33e0a80358cf?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "story-machines",
@@ -16,7 +16,7 @@ export const VisualStory = () => {
       subtitle: "Engines of Change",
       content: "Trains and cars carried us across continents and sparked new horizons.",
       highlightText: "Steel carried us farther, faster.",
-      image: "https://images.unsplash.com/photo-1528139846235-d7da4d860193?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1605915034248-ba76b2f32c3c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       reverse: true,
     },
     {
@@ -25,16 +25,7 @@ export const VisualStory = () => {
       subtitle: "Minds Linked",
       content: "Computers and social media shrank the world, letting billions share ideas instantly.",
       highlightText: "Information moved at the speed of light.",
-      image: "https://images.unsplash.com/photo-1468956332311-c795beafb8c4?auto=format&fit=crop&w=1200&q=80",
-    },
-    {
-      id: "story-guidance",
-      title: "KNOWLEDGE",
-      subtitle: "Shared Wisdom",
-      content: "Mentors and communities guided dreams with insight and experience.",
-      highlightText: "Wisdom flows from mind to mind.",
-      image: "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?auto=format&fit=crop&w=1200&q=80",
-      reverse: true,
+      image: "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "story-ai",
@@ -42,7 +33,7 @@ export const VisualStory = () => {
       subtitle: "A Tool of Thought",
       content: "Artificial minds now offer guidance as a tool itself, accelerating creation.",
       highlightText: "We wield intelligence.",
-      image: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1682420636597-0786f3406a94?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "story-future",
@@ -50,7 +41,7 @@ export const VisualStory = () => {
       subtitle: "Beyond Imagination",
       content: "Something new is forming, ready to remake the world.",
       highlightText: "Be ready for the transformation.",
-      image: "https://images.unsplash.com/photo-1505935428862-770b6f24f629?auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1576075796033-848c2a5f3696?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       reverse: true,
     },
   ];
