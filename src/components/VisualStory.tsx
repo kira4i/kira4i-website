@@ -48,11 +48,6 @@ export const VisualStory = () => {
 
   return (
     <section>
-      <div className="text-center py-20">
-        <h2 className="text-5xl md:text-7xl font-black glitch-text text-neon-cyan">
-          History of Human, Tools, and Collaboration
-        </h2>
-      </div>
       {steps.map((step) => (
         <StorySection key={step.id} {...step} />
       ))}
