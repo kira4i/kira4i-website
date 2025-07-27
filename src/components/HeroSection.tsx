@@ -26,7 +26,7 @@ export const HeroSection = () => {
           <span className="text-neon-magenta neon-magenta-text pulse-magenta">IS NOW</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-2xl md:text-3xl text-neon-cyan neon-glow mb-12 max-w-2xl mx-auto">
           What if AI and humans could collaborate to create masterpieces beyond imagination?
         </p>
         

@@ -186,4 +186,8 @@ All colors MUST be HSL.
       text-shadow: 0 0 20px hsl(var(--neon-magenta) / 1), 0 0 30px hsl(var(--neon-magenta) / 0.8);
     }
   }
+
+  .particle {
+    @apply absolute rounded-full blur-sm animate-ping opacity-60 bg-neon-purple;
+  }
 }
