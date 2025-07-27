@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import cookingLab from "@/assets/cooking-lab.jpg";
+
 
 export const FinalCTA = () => {
   const [email, setEmail] = useState("");
@@ -13,14 +13,17 @@ export const FinalCTA = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    
-    // Simulate email submission
+
+    const stored = JSON.parse(localStorage.getItem("kira4i-emails") || "[]");
+    stored.push({ email, ts: Date.now() });
+    localStorage.setItem("kira4i-emails", JSON.stringify(stored));
+
     setIsSubmitted(true);
     toast({
       title: "Welcome to the Future!",
       description: "You've been added to the Kira4I early access list.",
     });
-    
+
     setTimeout(() => {
       setIsSubmitted(false);
       setEmail("");
@@ -30,9 +33,9 @@ export const FinalCTA = () => {
   return (
     <section id="kira4i" className="min-h-screen flex items-center py-20 relative overflow-hidden">
       {/* Background */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: `url(${cookingLab})` }}
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1496449903677-68e109498ffc?auto=format&fit=crop&w=1200&q=80)' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
       
@@ -40,15 +43,15 @@ export const FinalCTA = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
             <h2 className="text-7xl md:text-8xl font-black mb-8 glitch-text tracking-tight">
-              <span className="neon-text">WE ARE</span>
+              <span className="neon-text">THE</span>
               <br />
-              <span className="text-neon-teal pulse-neon">COOKING</span>
+              <span className="text-neon-teal pulse-neon">BIRTH</span>
             </h2>
             <p className="text-3xl md:text-4xl text-foreground/70 mb-6 font-light">
-              Right now in the kitchen...
+              Growing inside a neon womb...
             </p>
             <p className="text-2xl text-neon-cyan font-medium mb-8">
-              "Kira4I" is being built
+              The Kira4I prototype grows stronger
             </p>
           </div>
 
@@ -70,11 +73,11 @@ export const FinalCTA = () => {
                   className="h-16 text-lg bg-background/80 border-neon-teal/30 focus:border-neon-cyan"
                   required
                 />
-                <Button 
-                  type="submit" 
-                  variant="cyber" 
-                  size="xl" 
-                  className="w-full"
+                <Button
+                  type="submit"
+                  variant="glow"
+                  size="xl"
+                  className="w-full pulse-neon"
                   disabled={!email}
                 >
                   Join the Revolution
@@ -90,8 +93,9 @@ export const FinalCTA = () => {
             )}
           </div>
           
-          <div className="mt-12 text-sm text-muted-foreground">
-            <p>Be part of something extraordinary. Kira4I is coming.</p>
+          <div className="mt-12 text-sm text-muted-foreground space-y-2">
+            <p>Kira4I team is building actively. Be part of something extraordinary.</p>
+            <p>Your email is stored locally in this browser.</p>
           </div>
         </div>
       </div>
