@@ -35,7 +35,7 @@ export const FinalCTA = () => {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1496449903677-68e109498ffc?auto=format&fit=crop&w=1200&q=80)' }}
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1611419010196-a360856fc42f?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
       
@@ -93,9 +93,8 @@ export const FinalCTA = () => {
             )}
           </div>
           
-          <div className="mt-12 text-sm text-muted-foreground space-y-2">
+          <div className="mt-12 text-sm text-muted-foreground">
             <p>Kira4I team is building actively. Be part of something extraordinary.</p>
-            <p>Your email is stored locally in this browser.</p>
           </div>
         </div>
       </div>
