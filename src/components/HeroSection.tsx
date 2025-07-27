@@ -23,24 +23,16 @@ export const HeroSection = () => {
         <h1 className="text-6xl md:text-8xl font-bold mb-8 glitch-text">
           <span className="neon-text pulse-neon">THE FUTURE</span>
           <br />
-          <span className="text-neon-magenta">IS NOW</span>
+          <span className="text-neon-magenta neon-magenta-text pulse-magenta">IS NOW</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-2xl md:text-3xl text-neon-cyan neon-glow mb-12 max-w-2xl mx-auto">
           What if AI and humans could collaborate to create masterpieces beyond imagination?
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button 
-            variant="cyber" 
-            size="xl" 
-            onClick={scrollToNext}
-            className="min-w-[200px]"
-          >
-            Enter the Matrix
-          </Button>
-          <Button 
-            variant="neon" 
+        <div className="flex justify-center">
+          <Button
+            variant="neon"
             size="xl"
             onClick={scrollToNext}
             className="min-w-[200px]"

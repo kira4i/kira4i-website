@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import animatePlugin from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -18,9 +19,9 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-			},
+                        fontFamily: {
+                                sans: ['Inter', 'sans-serif'],
+                        },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -65,13 +66,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				neon: {
-					cyan: 'hsl(var(--neon-cyan))',
-					teal: 'hsl(var(--neon-teal))',
-					'dark-teal': 'hsl(var(--neon-dark-teal))',
-					blue: 'hsl(var(--neon-blue))',
-					green: 'hsl(var(--neon-green))'
-				}
+                                neon: {
+                                        cyan: 'hsl(var(--neon-cyan))',
+                                        teal: 'hsl(var(--neon-teal))',
+                                        'dark-teal': 'hsl(var(--neon-dark-teal))',
+                                        blue: 'hsl(var(--neon-blue))',
+                                        green: 'hsl(var(--neon-green))',
+                                        magenta: 'hsl(var(--neon-magenta))',
+                                        purple: 'hsl(var(--neon-purple))'
+                                }
 			},
 			backgroundImage: {
 				'gradient-cyber': 'var(--gradient-cyber)',
@@ -112,5 +115,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+        plugins: [animatePlugin],
 } satisfies Config;
