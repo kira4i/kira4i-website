@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -64,8 +67,8 @@ export default {
 				},
 				neon: {
 					cyan: 'hsl(var(--neon-cyan))',
-					magenta: 'hsl(var(--neon-magenta))',
-					purple: 'hsl(var(--neon-purple))',
+					teal: 'hsl(var(--neon-teal))',
+					'dark-teal': 'hsl(var(--neon-dark-teal))',
 					blue: 'hsl(var(--neon-blue))',
 					green: 'hsl(var(--neon-green))'
 				}

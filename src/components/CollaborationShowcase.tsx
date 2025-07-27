@@ -29,27 +29,26 @@ export const CollaborationShowcase = () => {
     <section id="collaboration" className="min-h-screen py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-6xl md:text-8xl font-black mb-8 tracking-tight">
             <span className="neon-text pulse-neon">SYMBIOTIC</span>
             <br />
-            <span className="text-neon-magenta">INTELLIGENCE</span>
+            <span className="text-neon-teal">INTELLIGENCE</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            When artificial intelligence meets human creativity, magic happens. 
-            Together, we transcend the limitations of what either could achieve alone.
+          <p className="text-2xl text-foreground/70 max-w-2xl mx-auto font-light">
+            When AI meets human creativity, magic happens.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {capabilities.map((capability, index) => (
-            <Card 
+            <div 
               key={index}
-              className="neon-glow bg-card/30 backdrop-blur-sm p-6 text-center hover:scale-105 transition-all duration-300"
+              className="p-8 text-center hover:scale-105 transition-all duration-300 group"
             >
-              <div className="text-4xl mb-4">{capability.icon}</div>
-              <h3 className="text-xl font-bold text-neon-cyan mb-3">{capability.title}</h3>
-              <p className="text-muted-foreground">{capability.description}</p>
-            </Card>
+              <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">{capability.icon}</div>
+              <h3 className="text-xl font-semibold text-neon-cyan mb-4">{capability.title}</h3>
+              <p className="text-foreground/60 font-light">{capability.description}</p>
+            </div>
           ))}
         </div>
 

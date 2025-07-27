@@ -39,26 +39,25 @@ export const FinalCTA = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
-            <h2 className="text-6xl md:text-7xl font-bold mb-8 glitch-text">
+            <h2 className="text-7xl md:text-8xl font-black mb-8 glitch-text tracking-tight">
               <span className="neon-text">WE ARE</span>
               <br />
-              <span className="text-neon-magenta pulse-neon">COOKING</span>
+              <span className="text-neon-teal pulse-neon">COOKING</span>
             </h2>
-            <p className="text-2xl md:text-3xl text-muted-foreground mb-6">
+            <p className="text-3xl md:text-4xl text-foreground/70 mb-6 font-light">
               Right now in the kitchen...
             </p>
-            <p className="text-xl text-neon-cyan font-semibold mb-8">
-              Something amazing called "Kira4I" is being built
+            <p className="text-2xl text-neon-cyan font-medium mb-8">
+              "Kira4I" is being built
             </p>
           </div>
 
-          <Card className="neon-glow bg-card/20 backdrop-blur-sm p-8 md:p-12 max-w-2xl mx-auto">
-            <h3 className="text-3xl font-bold mb-6 text-neon-cyan">
-              Be the First to Experience the Future
+          <div className="p-8 md:p-12 max-w-2xl mx-auto">
+            <h3 className="text-4xl font-bold mb-6 text-neon-cyan">
+              Experience the Future First
             </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Join the early access list and be among the first to witness what happens 
-              when cutting-edge AI meets human creativity. The revolution starts with you.
+            <p className="text-xl text-foreground/70 mb-8 font-light">
+              Join early access. Witness AI meets human creativity.
             </p>
             
             {!isSubmitted ? (
@@ -68,7 +67,7 @@ export const FinalCTA = () => {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="h-14 text-lg neon-glow bg-background/50"
+                  className="h-16 text-lg bg-background/80 border-neon-teal/30 focus:border-neon-cyan"
                   required
                 />
                 <Button 
@@ -89,7 +88,7 @@ export const FinalCTA = () => {
                 </p>
               </div>
             )}
-          </Card>
+          </div>
           
           <div className="mt-12 text-sm text-muted-foreground">
             <p>Be part of something extraordinary. Kira4I is coming.</p>

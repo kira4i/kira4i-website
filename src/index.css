@@ -8,51 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Cyberpunk Dark Theme */
-    --background: 240 10% 3.9%;
-    --foreground: 180 100% 90%;
+    /* Cyberpunk Dark Theme - Updated Palette */
+    --background: 210 25% 8%;
+    --foreground: 180 15% 85%;
 
-    --card: 240 10% 8%;
-    --card-foreground: 180 100% 90%;
+    --card: 210 20% 12%;
+    --card-foreground: 180 15% 85%;
 
-    --popover: 240 10% 8%;
-    --popover-foreground: 180 100% 90%;
+    --popover: 210 20% 12%;
+    --popover-foreground: 180 15% 85%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 240 10% 3.9%;
+    --primary: 176 100% 70%;
+    --primary-foreground: 210 25% 8%;
 
-    --secondary: 300 100% 25%;
-    --secondary-foreground: 180 100% 90%;
+    --secondary: 184 25% 45%;
+    --secondary-foreground: 180 15% 85%;
 
-    --muted: 240 10% 15%;
-    --muted-foreground: 180 30% 70%;
+    --muted: 210 15% 20%;
+    --muted-foreground: 180 10% 60%;
 
-    --accent: 330 100% 50%;
-    --accent-foreground: 240 10% 3.9%;
+    --accent: 176 100% 70%;
+    --accent-foreground: 210 25% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 15% 20%;
-    --input: 240 10% 15%;
-    --ring: 180 100% 50%;
+    --border: 210 15% 25%;
+    --input: 210 15% 20%;
+    --ring: 176 100% 70%;
 
-    /* Cyberpunk Specific Colors */
-    --neon-cyan: 180 100% 50%;
-    --neon-magenta: 330 100% 50%;
-    --neon-purple: 270 100% 60%;
-    --neon-blue: 220 100% 60%;
-    --neon-green: 120 100% 50%;
+    /* Updated Neon Colors */
+    --neon-cyan: 176 100% 70%;
+    --neon-teal: 184 65% 55%;
+    --neon-dark-teal: 184 45% 35%;
+    --neon-blue: 220 60% 60%;
+    --neon-green: 150 80% 60%;
     
     /* Gradients */
-    --gradient-cyber: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-magenta)));
-    --gradient-glow: linear-gradient(45deg, hsl(var(--neon-purple)), hsl(var(--neon-blue)));
-    --gradient-matrix: linear-gradient(180deg, hsl(var(--background)), hsl(240 10% 8%));
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-teal)));
+    --gradient-glow: linear-gradient(45deg, hsl(var(--neon-teal)), hsl(var(--neon-blue)));
+    --gradient-matrix: linear-gradient(180deg, hsl(var(--background)), hsl(210 20% 12%));
     
     /* Shadows */
-    --shadow-neon: 0 0 20px hsl(var(--neon-cyan) / 0.5);
-    --shadow-glow: 0 0 40px hsl(var(--neon-magenta) / 0.3);
-    --shadow-intense: 0 0 60px hsl(var(--neon-purple) / 0.4);
+    --shadow-neon: 0 0 30px hsl(var(--neon-cyan) / 0.4);
+    --shadow-glow: 0 0 50px hsl(var(--neon-teal) / 0.3);
+    --shadow-intense: 0 0 70px hsl(var(--neon-cyan) / 0.2);
 
     --radius: 0.5rem;
 
