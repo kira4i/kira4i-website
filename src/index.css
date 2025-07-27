@@ -129,7 +129,6 @@ All colors MUST be HSL.
   /* Cyberpunk animations and effects */
   .neon-glow {
     box-shadow: var(--shadow-neon);
-    border: 1px solid hsl(var(--neon-cyan));
   }
   
   .neon-text {

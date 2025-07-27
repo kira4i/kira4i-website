@@ -8,7 +8,7 @@ export const VisualStory = () => {
       subtitle: "From Stone to Steel",
       content: "Small bands shaped hammers and knives. Simple tools ignited our rise.",
       highlightText: "Every revolution starts with a single strike.",
-      image: "/step1-tools.svg",
+      image: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "story-machines",
@@ -16,7 +16,7 @@ export const VisualStory = () => {
       subtitle: "Engines of Change",
       content: "Trains and cars carried us across continents and sparked new horizons.",
       highlightText: "Steel carried us farther, faster.",
-      image: "/step2-machines.svg",
+      image: "https://images.unsplash.com/photo-1605915034248-ba76b2f32c3c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       reverse: true,
     },
     {
@@ -25,16 +25,7 @@ export const VisualStory = () => {
       subtitle: "Minds Linked",
       content: "Computers and social media shrank the world, letting billions share ideas instantly.",
       highlightText: "Information moved at the speed of light.",
-      image: "/step3-digital.svg",
-    },
-    {
-      id: "story-guidance",
-      title: "KNOWLEDGE",
-      subtitle: "Shared Wisdom",
-      content: "Mentors and communities guided dreams with insight and experience.",
-      highlightText: "Wisdom flows from mind to mind.",
-      image: "/step4-knowledge.svg",
-      reverse: true,
+      image: "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "story-ai",
@@ -42,7 +33,7 @@ export const VisualStory = () => {
       subtitle: "A Tool of Thought",
       content: "Artificial minds now offer guidance as a tool itself, accelerating creation.",
       highlightText: "We wield intelligence.",
-      image: "/step5-ai.svg",
+      image: "https://images.unsplash.com/photo-1682420636597-0786f3406a94?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: "story-future",
@@ -50,16 +41,21 @@ export const VisualStory = () => {
       subtitle: "Beyond Imagination",
       content: "Something new is forming, ready to remake the world.",
       highlightText: "Be ready for the transformation.",
-      image: "/step6-future.svg",
+      image: "https://images.unsplash.com/photo-1576075796033-848c2a5f3696?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       reverse: true,
     },
   ];
 
   return (
-    <>
+    <section>
+      <div className="text-center py-20">
+        <h2 className="text-5xl md:text-7xl font-black glitch-text text-neon-cyan">
+          History of Human, Tools, and Collaboration
+        </h2>
+      </div>
       {steps.map((step) => (
         <StorySection key={step.id} {...step} />
       ))}
-    </>
+    </section>
   );
 };

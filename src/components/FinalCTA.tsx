@@ -35,7 +35,7 @@ export const FinalCTA = () => {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{ backgroundImage: 'url(/cyber-baby.svg)' }}
+        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1611419010196-a360856fc42f?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
       
