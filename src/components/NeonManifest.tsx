@@ -11,7 +11,7 @@ export const NeonManifest = () => {
         {words.map((w) => (
           <h2
             key={w}
-            className="text-5xl md:text-7xl font-black neon-text neon-glow relative"
+            className="text-5xl md:text-7xl font-black title-text neon-glow relative"
           >
             {w}
           </h2>

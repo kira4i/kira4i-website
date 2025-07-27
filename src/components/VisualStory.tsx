@@ -51,7 +51,7 @@ export const VisualStory = () => {
 
   return (
     <section className="relative">
-      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-neon-purple/40 pointer-events-none" />
+      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-neon-teal/40 pointer-events-none" />
       {steps.map((step) => (
         <StorySection key={step.id} {...step} />
       ))}

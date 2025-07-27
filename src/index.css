@@ -135,6 +135,11 @@ All colors MUST be HSL.
     color: hsl(var(--neon-cyan));
     text-shadow: 0 0 10px hsl(var(--neon-cyan) / 0.8);
   }
+
+  .title-text {
+    color: hsl(var(--neon-teal));
+    text-shadow: 0 0 10px hsl(var(--neon-teal) / 0.8);
+  }
   
   .cyber-grid {
     background-image: 
@@ -187,7 +192,21 @@ All colors MUST be HSL.
     }
   }
 
+  @keyframes float {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
   .particle {
-    @apply absolute rounded-full blur-sm animate-ping opacity-60 bg-neon-purple;
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(2px);
+    opacity: 0.6;
+    background: radial-gradient(circle, hsl(var(--neon-purple)), transparent);
+    animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite, float 6s ease-in-out infinite;
   }
 }
