@@ -71,12 +71,12 @@ export const VisualStory = () => {
     <section className="relative">
       {/* Thick blue glowing timeline with random vectors */}
       <svg
-        className="absolute inset-0 w-full h-full pointer-events-none z-10"
+        className="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible"
         preserveAspectRatio="none"
         viewBox="0 0 100 100"
       >
         <defs>
-          <filter id="glow">
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
             <feGaussianBlur stdDeviation="4" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />

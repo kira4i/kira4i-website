@@ -1,3 +1,6 @@
+import { cn } from "@/lib/utils";
+import { useInView } from "@/hooks/use-in-view";
+
 interface StorySectionProps {
   id: string;
   title: string;
@@ -16,10 +19,15 @@ export const StorySection = ({
   image,
   highlightText,
 }: StorySectionProps) => {
+  const { ref, inView } = useInView({ threshold: 0.6 });
   return (
     <section
+      ref={ref}
       id={id}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center animate-in fade-in transition duration-700"
+      className={cn(
+        "relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center transition-opacity duration-1000",
+        inView ? "opacity-100" : "opacity-0"
+      )}
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="absolute left-1/2 top-1/2 -ml-1 -mt-1 w-2 h-2 bg-neon-teal rounded-full shadow-neon" />
