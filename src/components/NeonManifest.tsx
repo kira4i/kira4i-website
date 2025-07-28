@@ -7,11 +7,11 @@ export const NeonManifest = () => {
         <div className="particle w-3 h-3 right-1/5 top-1/2 delay-1000" />
         <div className="particle w-1 h-1 left-1/2 bottom-1/4 delay-2000" />
       </div>
-      <div className="space-y-6 text-center relative z-10">
+      <div className="space-y-4 sm:space-y-6 text-center relative z-10 px-4">
         {words.map((w) => (
           <h2
             key={w}
-            className="text-5xl md:text-7xl font-black title-text relative"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black title-text relative break-words"
           >
             {w}
           </h2>
