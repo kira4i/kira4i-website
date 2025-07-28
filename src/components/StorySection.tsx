@@ -23,7 +23,7 @@ export const StorySection = ({
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="absolute left-1/2 top-1/2 -ml-1 -mt-1 w-2 h-2 bg-neon-teal rounded-full shadow-neon" />
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-md" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center space-y-5">
         <div className="text-neon-magenta font-mono">{year}</div>
         <h2 className="text-5xl font-bold title-text">{title}</h2>

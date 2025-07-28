@@ -71,7 +71,7 @@ export const VisualStory = () => {
     <section className="relative">
       {/* Thick blue glowing timeline with random vectors */}
       <svg
-        className="absolute inset-0 w-full h-full pointer-events-none z-0"
+        className="absolute inset-0 w-full h-full pointer-events-none z-10"
         preserveAspectRatio="none"
       >
         <defs>
