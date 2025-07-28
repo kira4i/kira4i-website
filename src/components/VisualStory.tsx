@@ -56,7 +56,7 @@ export const VisualStory = () => {
     {
       id: "story-future",
       title: "TRANSFORMATION",
-      year: "2030s?",
+      year: "NOW",
       subtitle: "Beyond Imagination",
       content: "Something new is forming, ready to remake the world.",
       highlightText: "Be ready for the transformation.",
@@ -108,6 +108,8 @@ export const VisualStory = () => {
           fill="none"
           filter="url(#glow)"
           opacity="0.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
       {steps.map((step) => (
