@@ -11,6 +11,7 @@ export const VisualStory = () => {
       content: "Small bands shaped hammers and knives. Simple tools ignited our rise.",
       highlightText: "Every revolution starts with a single strike.",
       image: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      noFade: true,
     },
     {
       id: "story-machines",
@@ -20,6 +21,7 @@ export const VisualStory = () => {
       content: "Trains and cars carried us across continents and sparked new horizons.",
       highlightText: "Steel carried us farther, faster.",
       image: "https://images.unsplash.com/photo-1605915034248-ba76b2f32c3c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      noFade: true,
     },
     {
       id: "story-digital",
@@ -71,12 +73,12 @@ export const VisualStory = () => {
     <section className="relative">
       {/* Thick blue glowing timeline with random vectors */}
       <svg
-        className="absolute inset-0 w-full h-full pointer-events-none z-10"
+        className="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible"
         preserveAspectRatio="none"
         viewBox="0 0 100 100"
       >
         <defs>
-          <filter id="glow">
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
             <feGaussianBlur stdDeviation="4" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />
@@ -90,7 +92,7 @@ export const VisualStory = () => {
           strokeWidth="8"
           fill="none"
           filter="url(#glow)"
-          opacity="0.8"
+          opacity="0.5"
         />
       </svg>
       {steps.map((step) => (
