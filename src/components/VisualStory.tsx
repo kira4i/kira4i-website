@@ -51,7 +51,30 @@ export const VisualStory = () => {
 
   return (
     <section className="relative">
-      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-neon-teal/40 pointer-events-none" />
+      {/* Thick blue glowing timeline with random vectors */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" preserveAspectRatio="none">
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+            <feMerge> 
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <path
+          d="M 50% 20% 
+             C 30% 35%, 70% 45%, 50% 40%
+             C 20% 55%, 80% 65%, 50% 60%
+             C 75% 75%, 25% 85%, 50% 80%
+             C 30% 95%, 70% 105%, 50% 100%"
+          stroke="hsl(var(--neon-cyan))"
+          strokeWidth="6"
+          fill="none"
+          filter="url(#glow)"
+          opacity="0.8"
+        />
+      </svg>
       {steps.map((step) => (
         <StorySection key={step.id} {...step} />
       ))}

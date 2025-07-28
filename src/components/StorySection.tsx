@@ -26,7 +26,7 @@ export const StorySection = ({
       <div className="absolute inset-0 bg-black/70 backdrop-blur-md" />
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center space-y-5">
         <div className="text-neon-magenta font-mono">{year}</div>
-        <h2 className="text-5xl font-bold title-text neon-glow">{title}</h2>
+        <h2 className="text-5xl font-bold title-text">{title}</h2>
 
         <h3 className="text-xl text-neon-magenta">{subtitle}</h3>
         <p className="text-lg text-foreground/80 mb-4">{content}</p>
