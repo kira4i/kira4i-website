@@ -74,7 +74,14 @@ export const StorySection = ({
         >
           {subtitle}
         </h3>
-        <p className="text-lg text-foreground/80 mb-4">{content}</p>
+        <p
+          className={cn(
+            "text-lg text-foreground/80 mb-4 transition-opacity duration-1000",
+            highlightVisible ? "opacity-100" : "opacity-0"
+          )}
+        >
+          {content}
+        </p>
         {highlightText && (
           <p
             className={cn(

@@ -14,7 +14,7 @@ export const VisualStory = () => {
       fadeSubtitle: false,
       fadeHighlight: true,
       fadeImage: true,
-      noFade: true,
+      // noFade: true,
     },
     {
       id: "story-machines",
@@ -27,7 +27,7 @@ export const VisualStory = () => {
       fadeSubtitle: false,
       fadeHighlight: true,
       fadeImage: true,
-      noFade: true,
+      // noFade: true,
     },
     {
       id: "story-digital",
