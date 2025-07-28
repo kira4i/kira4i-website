@@ -20,13 +20,13 @@ export const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-6xl md:text-8xl font-bold mb-8 glitch-text">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-8 glitch-text break-words">
           <span className="title-text pulse-neon">THE FUTURE</span>
           <br />
           <span className="text-neon-magenta neon-magenta-text pulse-magenta">IS NOW</span>
         </h1>
 
-        <p className="text-2xl md:text-3xl text-white mb-12 max-w-2xl mx-auto">
+        <p className="text-xl sm:text-2xl md:text-3xl text-white mb-12 max-w-2xl mx-auto px-4">
           What if AI and humans could collaborate to create masterpieces beyond imagination?
         </p>
         
@@ -42,10 +42,12 @@ export const HeroSection = () => {
         </div>
       </div>
       
-      {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-2 h-2 bg-neon-cyan rounded-full animate-pulse" />
-      <div className="absolute bottom-40 right-20 w-3 h-3 bg-neon-magenta rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 left-1/4 w-1 h-1 bg-neon-purple rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
+      {/* Subtle floating particles for hero */}
+      <div className="particle-subtle w-4 h-4 top-1/4 left-1/5" />
+      <div className="particle-subtle w-6 h-6 top-3/4 right-1/4" style={{ animationDelay: '3s' }} />
+      <div className="particle-subtle w-3 h-3 top-1/2 left-1/3" style={{ animationDelay: '6s' }} />
+      <div className="particle-subtle w-5 h-5 bottom-1/3 right-1/5" style={{ animationDelay: '9s' }} />
+      <div className="particle-subtle w-2 h-2 top-1/6 right-1/3" style={{ animationDelay: '12s' }} />
     </section>
   );
 };

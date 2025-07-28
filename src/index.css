@@ -201,12 +201,52 @@ All colors MUST be HSL.
     }
   }
 
+  /* Particle Effects */
   .particle {
     position: absolute;
     border-radius: 9999px;
+    filter: blur(1px);
+    opacity: 0.4;
+    background: linear-gradient(45deg, hsl(var(--neon-cyan) / 0.6), hsl(var(--neon-magenta) / 0.4));
+    animation: ping 4s cubic-bezier(0, 0, 0.2, 1) infinite, float 8s ease-in-out infinite;
+  }
+
+  .particle-subtle {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(3px);
+    opacity: 0.15;
+    background: radial-gradient(circle, hsl(var(--neon-cyan) / 0.3), transparent);
+    animation: gentle-float 12s ease-in-out infinite, gentle-glow 6s ease-in-out infinite;
+  }
+
+  .particle-ambient {
+    position: absolute;
+    border-radius: 9999px;
     filter: blur(2px);
-    opacity: 0.6;
-    background: radial-gradient(circle, hsl(var(--neon-purple)), transparent);
-    animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite, float 6s ease-in-out infinite;
+    opacity: 0.25;
+    background: linear-gradient(135deg, hsl(var(--neon-teal) / 0.4), hsl(var(--neon-cyan) / 0.3));
+    animation: drift 15s linear infinite, pulse-soft 8s ease-in-out infinite;
+  }
+
+  @keyframes gentle-float {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    33% { transform: translateY(-15px) translateX(10px); }
+    66% { transform: translateY(-5px) translateX(-8px); }
+  }
+
+  @keyframes gentle-glow {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.3; }
+  }
+
+  @keyframes drift {
+    0% { transform: translateX(-100vw) translateY(0px); }
+    100% { transform: translateX(100vw) translateY(-50px); }
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% { transform: scale(1); opacity: 0.2; }
+    50% { transform: scale(1.1); opacity: 0.4; }
   }
 }
