@@ -54,7 +54,7 @@ export const VisualStory = () => {
     const startY = 10;
     const endY = 90;
     const segment = (endY - startY) / (steps.length - 1);
-    let d = `M 50% ${startY}%`;
+    let d = `M 50 ${startY}`;
     for (let i = 1; i < steps.length; i++) {
       const prevY = startY + (i - 1) * segment;
       const currY = startY + i * segment;
@@ -62,7 +62,7 @@ export const VisualStory = () => {
       const c1y = prevY + segment / 2;
       const c2x = 20 + Math.random() * 60;
       const c2y = currY - segment / 2;
-      d += ` C ${c1x}% ${c1y}%, ${c2x}% ${c2y}%, 50% ${currY}%`;
+      d += ` C ${c1x} ${c1y}, ${c2x} ${c2y}, 50 ${currY}`;
     }
     return d;
   }, []);
@@ -73,6 +73,7 @@ export const VisualStory = () => {
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none z-10"
         preserveAspectRatio="none"
+        viewBox="0 0 100 100"
       >
         <defs>
           <filter id="glow">
