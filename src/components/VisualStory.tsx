@@ -11,6 +11,9 @@ export const VisualStory = () => {
       content: "Small bands shaped hammers and knives. Simple tools ignited our rise.",
       highlightText: "Every revolution starts with a single strike.",
       image: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      fadeSubtitle: false,
+      fadeHighlight: true,
+      fadeImage: true,
       noFade: true,
     },
     {
@@ -21,6 +24,9 @@ export const VisualStory = () => {
       content: "Trains and cars carried us across continents and sparked new horizons.",
       highlightText: "Steel carried us farther, faster.",
       image: "https://images.unsplash.com/photo-1605915034248-ba76b2f32c3c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      fadeSubtitle: false,
+      fadeHighlight: true,
+      fadeImage: true,
       noFade: true,
     },
     {
@@ -31,6 +37,9 @@ export const VisualStory = () => {
       content: "Computers and social media shrank the world, letting billions share ideas instantly.",
       highlightText: "Information moved at the speed of light.",
       image: "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      fadeSubtitle: false,
+      fadeHighlight: true,
+      fadeImage: true,
     },
     {
       id: "story-intelligence",
@@ -40,6 +49,9 @@ export const VisualStory = () => {
       content: "Artificial minds now offer guidance as a tool itself, accelerating creation.",
       highlightText: "We wield intelligence.",
       image: "https://images.unsplash.com/photo-1682420636597-0786f3406a94?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      fadeSubtitle: false,
+      fadeHighlight: true,
+      fadeImage: true,
     },
     {
       id: "story-future",
@@ -49,6 +61,9 @@ export const VisualStory = () => {
       content: "Something new is forming, ready to remake the world.",
       highlightText: "Be ready for the transformation.",
       image: "https://images.unsplash.com/photo-1576075796033-848c2a5f3696?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      fadeSubtitle: false,
+      fadeHighlight: true,
+      fadeImage: true,
     },
   ];
 
