@@ -8,26 +8,56 @@ import { useToast } from "@/hooks/use-toast";
 export const FinalCTA = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
+    
+    setIsLoading(true);
+    
+    try {
+      const response = await fetch("http://localhost:5000/api/early-access", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
 
-    const stored = JSON.parse(localStorage.getItem("kira4i-emails") || "[]");
-    stored.push({ email, ts: Date.now() });
-    localStorage.setItem("kira4i-emails", JSON.stringify(stored));
+      if (response.ok) {
+        // Also store in localStorage as backup
+        const stored = JSON.parse(localStorage.getItem("kira4i-emails") || "[]");
+        stored.push({ email, ts: Date.now() });
+        localStorage.setItem("kira4i-emails", JSON.stringify(stored));
 
-    setIsSubmitted(true);
-    toast({
-      title: "Welcome to the Future!",
-      description: "You've been added to the Kira4I early access list.",
-    });
+        setIsSubmitted(true);
+        toast({
+          title: "Welcome to the Future!",
+          description: "You've been added to the Kira4I early access list.",
+        });
 
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setEmail("");
-    }, 3000);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setEmail("");
+        }, 3000);
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to submit email. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to submit email. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -72,15 +102,16 @@ export const FinalCTA = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   className="h-16 text-lg bg-background/80 border-neon-teal/30 focus:border-neon-cyan"
                   required
+                  disabled={isLoading}
                 />
                 <Button
                   type="submit"
                   variant="glow"
                   size="xl"
                   className="w-full pulse-neon"
-                  disabled={!email}
+                  disabled={!email || isLoading}
                 >
-                  Join the Revolution
+                  {isLoading ? "Submitting..." : "Join the Revolution"}
                 </Button>
               </form>
             ) : (
