@@ -1,4 +1,5 @@
 import { StorySection } from "@/components/StorySection";
+import { useMemo } from "react";
 
 export const VisualStory = () => {
   const steps = [
@@ -49,27 +50,43 @@ export const VisualStory = () => {
     },
   ];
 
+  const pathD = useMemo(() => {
+    const startY = 10;
+    const endY = 90;
+    const segment = (endY - startY) / (steps.length - 1);
+    let d = `M 50% ${startY}%`;
+    for (let i = 1; i < steps.length; i++) {
+      const prevY = startY + (i - 1) * segment;
+      const currY = startY + i * segment;
+      const c1x = 20 + Math.random() * 60;
+      const c1y = prevY + segment / 2;
+      const c2x = 20 + Math.random() * 60;
+      const c2y = currY - segment / 2;
+      d += ` C ${c1x}% ${c1y}%, ${c2x}% ${c2y}%, 50% ${currY}%`;
+    }
+    return d;
+  }, []);
+
   return (
     <section className="relative">
       {/* Thick blue glowing timeline with random vectors */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" preserveAspectRatio="none">
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none z-0"
+        preserveAspectRatio="none"
+      >
         <defs>
           <filter id="glow">
-            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-            <feMerge> 
-              <feMergeNode in="coloredBlur"/>
-              <feMergeNode in="SourceGraphic"/>
+            <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
         </defs>
         <path
-          d="M 50% 20% 
-             C 30% 35%, 70% 45%, 50% 40%
-             C 20% 55%, 80% 65%, 50% 60%
-             C 75% 75%, 25% 85%, 50% 80%
-             C 30% 95%, 70% 105%, 50% 100%"
+          d={pathD}
           stroke="hsl(var(--neon-cyan))"
-          strokeWidth="6"
+          strokeWidth="8"
           fill="none"
           filter="url(#glow)"
           opacity="0.8"
