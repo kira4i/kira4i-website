@@ -18,7 +18,7 @@ export const FinalCTA = () => {
     setIsLoading(true);
     
     try {
-      const response = await fetch("http://localhost:5000/api/early-access", {
+      const response = await fetch("https://storeemail.kira4i.com/api/early-access", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
