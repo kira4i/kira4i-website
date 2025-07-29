@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { TelegramLogoIcon } from "@radix-ui/react-icons";
 
 
 export const FinalCTA = () => {
@@ -122,6 +123,18 @@ export const FinalCTA = () => {
                 </p>
               </div>
             )}
+          </div>
+          
+          <div className="mt-8">
+            <a 
+              href="https://t.me/itsKira4I" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#2AABEE] hover:bg-[#2297d4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              <TelegramLogoIcon className="w-5 h-5" />
+              <span>Join our Telegram Community</span>
+            </a>
           </div>
           
           <div className="mt-12 text-sm text-muted-foreground">
