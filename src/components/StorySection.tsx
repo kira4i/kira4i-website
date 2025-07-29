@@ -42,7 +42,7 @@ export const StorySection = ({
   fadeSubtitle = false,
   noFade,
 }: StorySectionProps) => {
-  const { ref, inView } = useInView({ threshold: 0.6 });
+  const { ref, inView } = useInView({ threshold: 0.3 });
   const visible = noFade ? true : inView;
   const imageVisible = fadeImage ? visible : true;
   const highlightVisible = fadeHighlight ? visible : true;
@@ -55,7 +55,7 @@ export const StorySection = ({
     >
       <div
         className={cn(
-          "absolute inset-0 bg-cover bg-center transition-opacity duration-1000",
+          "absolute inset-0 bg-cover bg-center transition-opacity duration-700",
           imageVisible ? "opacity-100" : "opacity-0"
         )}
         style={{ backgroundImage: `url(${image})` }}
@@ -68,7 +68,7 @@ export const StorySection = ({
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold title-text break-words">{title}</h2>
         <h3
           className={cn(
-            "text-xl text-neon-magenta transition-opacity duration-1000",
+            "text-xl text-neon-magenta transition-opacity duration-700",
             subtitleVisible ? "opacity-100" : "opacity-0"
           )}
         >
@@ -76,7 +76,7 @@ export const StorySection = ({
         </h3>
         <p
           className={cn(
-            "text-sm sm:text-base lg:text-lg text-foreground/80 mb-4 transition-opacity duration-1000 break-words",
+            "text-sm sm:text-base lg:text-lg text-foreground/80 mb-4 transition-opacity duration-700 break-words",
             highlightVisible ? "opacity-100" : "opacity-0"
           )}
         >
@@ -85,7 +85,7 @@ export const StorySection = ({
         {highlightText && (
           <p
             className={cn(
-              "text-neon-cyan text-lg sm:text-xl font-medium transition-opacity duration-1000 break-words",
+              "text-neon-cyan text-lg sm:text-xl font-medium transition-opacity duration-700 break-words",
               highlightVisible ? "opacity-100" : "opacity-0"
             )}
           >
