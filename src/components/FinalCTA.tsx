@@ -125,6 +125,7 @@ export const FinalCTA = () => {
           </div>
           
           <div className="mt-8">
+            <p className="text-lg mb-4">&</p>
             <a 
               href="https://t.me/itsKira4I" 
               target="_blank" 
