@@ -78,20 +78,20 @@ export const FinalCTA = () => {
               <span className="text-neon-teal pulse-neon">BIRTH</span>
             </h2>
             <p className="text-3xl md:text-4xl text-foreground/70 mb-6 font-light">
-              Growing inside a neon womb...
+              Human's finest AI Agent
             </p>
-            <p className="text-2xl text-neon-cyan font-medium mb-8">
+            {/* <p className="text-2xl text-neon-cyan font-medium mb-8">
               The Kira4I prototype grows stronger
-            </p>
+            </p> */}
           </div>
 
           <div className="p-8 md:p-12 max-w-2xl mx-auto">
             <h3 className="text-4xl font-bold mb-6 title-text">
               Experience the Future First
             </h3>
-            <p className="text-xl text-foreground/70 mb-8 font-light">
-              Join early access. Witness AI meets human creativity.
-            </p>
+            {/* <p className="text-xl text-foreground/70 mb-8 font-light">
+              Join early access!
+            </p> */}
             
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
