@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import { TelegramLogoIcon } from "@radix-ui/react-icons";
 
 
 export const FinalCTA = () => {
@@ -132,7 +131,20 @@ export const FinalCTA = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#2AABEE] hover:bg-[#2297d4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              <TelegramLogoIcon className="w-5 h-5" />
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="20" 
+                height="20" 
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-white"
+              >
+                <path d="M21.08 7.99c-3.61-.39-6.75-.89-10.08-1.39l2.17 7.59 6.68-3.99c.54-.33.77-1.01.54-1.61zM3.5 15.5c3.31 1.39 6.24 2.59 9.5 3.5l-2.17-7.59-7.33 4.09z"/>
+              </svg>
               <span>Join our Telegram Community</span>
             </a>
           </div>
