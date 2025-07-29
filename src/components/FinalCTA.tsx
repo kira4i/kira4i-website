@@ -125,7 +125,11 @@ export const FinalCTA = () => {
           </div>
           
           <div className="mt-8">
-            <p className="text-lg mb-4">&</p>
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neon-cyan to-transparent"></div>
+              <span className="text-2xl font-bold text-neon-cyan animate-pulse">&</span>
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neon-cyan to-transparent"></div>
+            </div>
             <a 
               href="https://t.me/itsKira4I" 
               target="_blank" 
