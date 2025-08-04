@@ -130,16 +130,36 @@ export const FinalCTA = () => {
               <span className="text-2xl font-bold text-neon-cyan animate-pulse">&</span>
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neon-cyan to-transparent"></div>
             </div>
-            <a 
-              href="https://t.me/itsKira4I" 
-              target="_blank" 
+            {/* WhatsApp community button */}
+            <a
+              href="https://chat.whatsapp.com/FFzY18byR71B1afbdiSBs0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe59] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-white"
+              >
+                <path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.64 0 .44 5.21.44 11.62c0 2.05.54 4.05 1.57 5.81L0 24l6.74-1.98a11.56 11.56 0 0 0 5.31 1.31h.01c6.4 0 11.6-5.21 11.6-11.62 0-3.1-1.21-6.01-3.14-8.23ZM12.06 21.3h-.01a9.7 9.7 0 0 1-4.95-1.36l-.35-.21-4 .12 1.14-3.87-.23-.39a9.67 9.67 0 0 1-1.45-5.1c0-5.34 4.34-9.68 9.68-9.68 2.58 0 5.01 1 6.83 2.81a9.6 9.6 0 0 1 2.84 6.86c0 5.34-4.34 9.72-9.5 9.72Zm5.33-7.28c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15-.19.29-.76.95-.93 1.15-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.45-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.37-.02-.52-.07-.15-.67-1.63-.91-2.24-.24-.58-.49-.49-.67-.49-.17 0-.37-.02-.56-.02-.2 0-.52.07-.8.37-.27.29-1.04 1.02-1.04 2.47s1.06 2.86 1.21 3.06c.15.19 2.07 3.15 5.01 4.42.7.3 1.25.48 1.68.61.71.23 1.36.2 1.87.12.57-.09 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z"/>
+              </svg>
+              <span>Join our WhatsApp Community</span>
+            </a>
+            {/* Telegram community button */}
+            <a
+              href="https://t.me/itsKira4I"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#2AABEE] hover:bg-[#2297d4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="20" 
-                height="20" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
