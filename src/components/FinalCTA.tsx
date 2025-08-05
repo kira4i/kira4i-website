@@ -78,7 +78,7 @@ export const FinalCTA = () => {
               <span className="text-neon-teal pulse-neon">BIRTH</span>
             </h2>
             <p className="text-3xl md:text-4xl text-foreground/70 mb-6 font-light">
-              Human's finest ON-DEVICE AI AGENT
+              Human's Finest On-device AI Agent
             </p>
             {/* <p className="text-2xl text-neon-cyan font-medium mb-8">
               The Kira4I prototype grows stronger
