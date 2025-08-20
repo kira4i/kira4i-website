@@ -72,12 +72,12 @@ export const FinalCTA = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
-            <h2 className="text-7xl md:text-8xl font-black mb-8 glitch-text tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black mb-8 glitch-text tracking-tight">
               <span className="title-text">THE</span>
               <br />
               <span className="text-neon-teal pulse-neon">BIRTH</span>
             </h2>
-            <p className="text-3xl md:text-4xl text-foreground/70 mb-6 font-light">
+            <p className="text-xl md:text-2xl text-foreground/70 mb-6 font-light">
               Human's Finest On-device AI Agent
             </p>
             {/* <p className="text-2xl text-neon-cyan font-medium mb-8">
@@ -86,7 +86,7 @@ export const FinalCTA = () => {
           </div>
 
           <div className="p-8 md:p-12 max-w-2xl mx-auto">
-            <h3 className="text-4xl font-bold mb-6 title-text">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 title-text">
               Experience the Future First
             </h3>
             {/* <p className="text-xl text-foreground/70 mb-8 font-light">
