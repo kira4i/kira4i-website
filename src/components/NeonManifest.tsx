@@ -3,7 +3,7 @@ export const NeonManifest = () => {
   const src = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&controls=1&playsinline=1`;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative py-8 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="particle w-2 h-2 left-1/4 top-1/3" />
         <div className="particle w-3 h-3 right-1/5 top-1/2 delay-1000" />

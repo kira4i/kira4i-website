@@ -131,17 +131,31 @@ export const FinalCTA = () => {
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neon-cyan to-transparent"></div>
             </div>
             
-            {/* Linktree embed */}
+            {/* Linktree button */}
             <div className="max-w-md mx-auto">
-              <div className="relative rounded-2xl overflow-hidden bg-background/20 backdrop-blur-sm border border-neon-cyan/30 shadow-2xl ring-1 ring-neon-cyan/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/10 via-transparent to-neon-purple/10 pointer-events-none"></div>
-                <iframe
-                  src="https://linktr.ee/kira4i"
-                  className="w-full h-96 bg-transparent"
-                  style={{ border: 'none' }}
-                  title="Kira4I Links"
-                />
-              </div>
+              <a
+                href="https://linktr.ee/kira4i"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block w-full p-8 rounded-2xl bg-background/20 backdrop-blur-sm border border-neon-cyan/30 hover:border-neon-cyan/60 shadow-2xl ring-1 ring-neon-cyan/20 hover:ring-neon-cyan/40 transition-all duration-300 hover:scale-105"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/10 via-transparent to-neon-purple/10 rounded-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative z-10 text-center">
+                  <div className="text-3xl mb-3 text-neon-cyan group-hover:text-neon-teal transition-colors duration-300">🔗</div>
+                  <h4 className="text-xl font-bold text-foreground mb-2 group-hover:text-neon-cyan transition-colors duration-300">
+                    All Kira4I Links
+                  </h4>
+                  <p className="text-sm text-foreground/70 group-hover:text-foreground/90 transition-colors duration-300">
+                    Connect with us across all platforms
+                  </p>
+                  <div className="mt-4 inline-flex items-center gap-2 text-neon-cyan font-medium">
+                    <span>Visit Linktree</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           
