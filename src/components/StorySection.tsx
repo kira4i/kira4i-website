@@ -51,7 +51,7 @@ export const StorySection = ({
     <section
       ref={noFade ? undefined : ref}
       id={id}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative py-20 min-h-[80vh] flex items-center justify-center overflow-hidden"
     >
       <div
         className={cn(
