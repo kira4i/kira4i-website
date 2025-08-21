@@ -85,7 +85,7 @@ export const StorySection = ({
         {highlightText && (
           <p
             className={cn(
-              "text-neon-cyan text-lg sm:text-xl font-medium transition-opacity duration-700 break-words",
+              "text-neon-cyan text-sm sm:text-base lg:text-lg font-medium transition-opacity duration-700 break-words",
               highlightVisible ? "opacity-100" : "opacity-0"
             )}
           >
