@@ -28,14 +28,14 @@ export const FinalCTA = () => {
 
       if (response.ok) {
         // Also store in localStorage as backup
-        const stored = JSON.parse(localStorage.getItem("kira4i-emails") || "[]");
+        const stored = JSON.parse(localStorage.getItem("kiraid-emails") || "[]");
         stored.push({ email, ts: Date.now() });
-        localStorage.setItem("kira4i-emails", JSON.stringify(stored));
+        localStorage.setItem("kiraid-emails", JSON.stringify(stored));
 
         setIsSubmitted(true);
         toast({
           title: "Welcome to the Future!",
-          description: "You've been added to the Kira4I early access list.",
+          description: "You've been added to the Kira.id early access list.",
         });
 
         setTimeout(() => {
@@ -61,7 +61,7 @@ export const FinalCTA = () => {
   };
 
   return (
-    <section id="kira4i" className="min-h-screen flex items-center py-20 relative overflow-hidden">
+    <section id="kiraid" className="min-h-screen flex items-center py-20 relative overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -81,7 +81,7 @@ export const FinalCTA = () => {
               Human's Finest On-device AI Agent
             </p>
             {/* <p className="text-2xl text-neon-cyan font-medium mb-8">
-              The Kira4I prototype grows stronger
+              The Kira.id prototype grows stronger
             </p> */}
           </div>
 
@@ -134,7 +134,7 @@ export const FinalCTA = () => {
             {/* Linktree button */}
             <div className="max-w-md mx-auto">
               <a
-                href="https://linktr.ee/kira4i"
+                href="https://linktr.ee/kiraid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative block w-full p-8 rounded-2xl bg-background/20 backdrop-blur-sm border border-neon-cyan/30 hover:border-neon-cyan/60 shadow-2xl ring-1 ring-neon-cyan/20 hover:ring-neon-cyan/40 transition-all duration-300 hover:scale-105"
@@ -143,7 +143,7 @@ export const FinalCTA = () => {
                 <div className="relative z-10 text-center">
                   <div className="text-3xl mb-3 text-neon-cyan group-hover:text-neon-teal transition-colors duration-300">🔗</div>
                   <h4 className="text-xl font-bold text-foreground mb-2 group-hover:text-neon-cyan transition-colors duration-300">
-                    All Kira4I Links
+                    All Kira.id Links
                   </h4>
                   <p className="text-sm text-foreground/70 group-hover:text-foreground/90 transition-colors duration-300">
                     Connect with us across all platforms
@@ -160,7 +160,7 @@ export const FinalCTA = () => {
           </div>
           
           <div className="mt-12 text-sm text-muted-foreground">
-            <p>Kira4I team is building actively. Be part of something extraordinary.</p>
+            <p>Kira.id team is building actively. Be part of something extraordinary.</p>
           </div>
         </div>
       </div>
