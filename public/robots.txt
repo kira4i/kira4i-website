@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://kira4i.com/sitemap.xml
+Sitemap: https://kira.id/sitemap.xml

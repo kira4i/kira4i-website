@@ -15,20 +15,20 @@ const Index = () => {
           content="Kira.id builds on-device AI Agent for your every digital needs."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://kira4i.com/" />
+        <link rel="canonical" href="https://kira.id/" />
         <meta property="og:title" content="Kira.id | Artificial Intelligence" />
         <meta
           property="og:description"
           content="Kira.id builds on-device AI Agent for your every digital needs."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kira4i.com/" />
+        <meta property="og:url" content="https://kira.id/" />
         <meta
           property="og:image"
-          content="https://kira4i.com/opengraph-image-p98pqg.png"
+          content="https://kira.id/opengraph-image-p98pqg.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@itskira4i" />
+        <meta name="twitter:site" content="@ishowkiraid" />
         <meta name="twitter:title" content="Kira.id | Artificial Intelligence" />
         <meta
           name="twitter:description"
@@ -36,7 +36,7 @@ const Index = () => {
         />
         <meta
           name="twitter:image"
-          content="https://kira4i.com/opengraph-image-p98pqg.png"
+          content="https://kira.id/opengraph-image-p98pqg.png"
         />
       </Helmet>
       <AmbientParticles />
