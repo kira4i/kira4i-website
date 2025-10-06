@@ -135,7 +135,7 @@ export const FinalCTA = () => {
             <div className="max-w-md mx-auto space-y-4">
               {/* Expo App button */}
               <a
-                href="https://expo.dev/nm9rmqc-anonymous-8081.exp.direct"
+                href="exp://nm9rmqc-samkoesnadi-8081.exp.direct"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative block w-full p-8 rounded-2xl bg-background/20 backdrop-blur-sm border border-neon-magenta/30 hover:border-neon-magenta/60 shadow-2xl ring-1 ring-neon-magenta/20 hover:ring-neon-magenta/40 transition-all duration-300 hover:scale-105"
